@@ -16,8 +16,8 @@
     </style>
 </head>
 <body>
-    <h1>欢迎您，新的朋友，请输入角色名查看惊喜！</h1>
-    <h2>本网页目前仅更新了“萨菲罗斯”，请输入“萨菲罗斯”：</h2>
+    <h1>请输入角色名，查看该角色惊喜！</h1>
+    <h2>请输入“萨菲罗斯”，查看隐藏惊喜！</h2>
     <div id="nameInput">
         <input type="text" id="characterName" placeholder="请输入角色名">
         <button onclick="checkCharacter()">确认</button>
@@ -27,9 +27,9 @@
         function checkCharacter() {
             var characterName = document.getElementById("characterName").value;
             if (characterName.toLowerCase() === "萨菲罗斯"||characterName === "Sephiroth") {
-                <a href="https://tattaqaq.github.io/FinalFantasy7FunnyPage/Sephiroth.html" title="Sephiroth">Sephiroth's Surprise</a>
+                window.location.href = "Sephiroth.html";
             } else {
-                <a href="Other.html">链接到Other页面</a>
+                window.location.href = "Other.html";
             }
         }
     </script>
